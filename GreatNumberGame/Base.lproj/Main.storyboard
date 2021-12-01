@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GreatNumberGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the great number game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfF-W0-wLb">
+                                <rect key="frame" x="37" y="88" width="340" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NRW-UU-xHR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am thinking of a number between 1 .. 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNR-oa-i4U">
+                                <rect key="frame" x="20" y="146" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE A GUESS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rta-0u-ekt">
+                                <rect key="frame" x="147" y="185" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-SV-E1S">
+                                <rect key="frame" x="150" y="236" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btf-3I-1mI">
+                                <rect key="frame" x="172" y="290" width="70" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <color key="baseBackgroundColor" red="0.22044742110000001" green="0.67452353239999996" blue="0.73438298700000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ap-sn-fx0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ElN-AF-atd">
+                                <rect key="frame" x="0.0" y="470" width="414" height="418"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="418" id="x4H-YX-GTC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.44114485380000001" green="0.7929483652" blue="0.80726379159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MrE-SV-E1S" secondAttribute="trailing" constant="150" id="2LG-8O-F5f"/>
+                            <constraint firstItem="TNR-oa-i4U" firstAttribute="top" secondItem="QfF-W0-wLb" secondAttribute="bottom" constant="8" symbolic="YES" id="AEr-GO-VLx"/>
+                            <constraint firstItem="Btf-3I-1mI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B3C-h8-Ecw"/>
+                            <constraint firstItem="QfF-W0-wLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DuI-1e-ImR"/>
+                            <constraint firstItem="QfF-W0-wLb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Gde-21-v6c"/>
+                            <constraint firstItem="ElN-AF-atd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HfW-5B-77y"/>
+                            <constraint firstItem="TNR-oa-i4U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ld3-BV-X4o"/>
+                            <constraint firstAttribute="trailing" secondItem="ElN-AF-atd" secondAttribute="trailing" id="OQt-np-rzj"/>
+                            <constraint firstItem="ElN-AF-atd" firstAttribute="top" secondItem="Btf-3I-1mI" secondAttribute="bottom" constant="149" id="QrN-Lc-tLu"/>
+                            <constraint firstItem="Btf-3I-1mI" firstAttribute="top" secondItem="MrE-SV-E1S" secondAttribute="bottom" constant="20" id="Sup-ra-hbj"/>
+                            <constraint firstItem="Btf-3I-1mI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="XSe-Bq-JdL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rta-0u-ekt" secondAttribute="trailing" constant="147" id="ZwO-XG-Caj"/>
+                            <constraint firstItem="Rta-0u-ekt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byU-vq-l8R"/>
+                            <constraint firstItem="Rta-0u-ekt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="gUC-LM-TGL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TNR-oa-i4U" secondAttribute="trailing" constant="20" id="iL5-mD-xBG"/>
+                            <constraint firstItem="MrE-SV-E1S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="lra-06-Cej"/>
+                            <constraint firstItem="Rta-0u-ekt" firstAttribute="top" secondItem="TNR-oa-i4U" secondAttribute="bottom" constant="18.5" id="qb0-c5-vWR"/>
+                            <constraint firstItem="MrE-SV-E1S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qqZ-jw-oYN"/>
+                            <constraint firstItem="TNR-oa-i4U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tB5-MP-5fA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Btf-3I-1mI" secondAttribute="trailing" constant="172" id="vf0-Zm-PB0"/>
+                            <constraint firstItem="ElN-AF-atd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wT0-DY-FM5"/>
+                            <constraint firstItem="MrE-SV-E1S" firstAttribute="top" secondItem="Rta-0u-ekt" secondAttribute="bottom" constant="30" id="wiu-Xp-zBM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userInput" destination="MrE-SV-E1S" id="aZc-Uk-mNv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="im3.jpeg" width="626" height="626"/>
+    </resources>
+</document>
